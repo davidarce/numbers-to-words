@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Numbers to Words</title>
+        <link rel="stylesheet" th:href="@{/css/styles.css}">
+    </head>
+    <body>
+        <header>
+            <div class="alert-danger" th:if="${error != null}" th:text="${error}">
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="container__convert">
+                <h2>Numbers to Words Converter</h2>
+                <form class="container--form" th:action="@{/convert}" th:object="${numberToWord}" method="post">
+                    <input id="number-input" type="text" name="number-input" class="input"
+                                   th:field="*{number}" placeholder="Enter a number" autofocus required/>
+                    <input type="submit" class="button" th:value="CONVERT"/>
+                </form>
+            </div>
+
+            <div th:if="${numberToWord.asWord == null}">
+                <span class="container__convert--result"></span>
+            </div>
+
+            <div th:if="${numberToWord.asWord}">
+                <span class="container__convert--result" th:text="${numberToWord.asWord}"></span>
+            </div>
+        </div>
+
+
+    </body>
+</html>

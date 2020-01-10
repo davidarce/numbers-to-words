@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Proxima Nova Light";
+}
+
+.alert-danger {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    text-align: center;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.container__convert {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 68px 40px;
+}
+
+.container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    outline: none;
+    height: 50px;
+}
+
+.button {
+    background-image: linear-gradient(to right bottom,#8e00f8,#00a9ef);
+    font-family: 'Muli', sans-serif;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.container__convert--result {
+    margin-top: 100px;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100px;
+}
