@@ -19,7 +19,7 @@ cd numbers-to-words
 #### Run the application
 ```
 mvn clean package spring-boot:repackage
-java -jar numbers-to-words.jar
+java -jar target/numbers-to-words.jar
 
 The application can be accessed through the following URL:
 http://localhost:8080/convert
